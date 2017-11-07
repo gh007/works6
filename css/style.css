@@ -1,0 +1,352 @@
+html {
+	box-sizing: border-box;
+}
+
+*,*:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	background-image: linear-gradient(260deg, 	gold 0%, green 100%);
+
+}
+
+
+
+
+.flex-nav a {
+	color: white;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background: rgba(0,0,0,0.3);
+	padding: 20px 5px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	transition: all .8s;
+
+}
+
+ a {
+	text-decoration: none;
+}
+
+ a:hover {
+	background: rgba(0,0,0,0.5);
+}
+
+.wrapper{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px;
+	height: 2100px;
+}
+
+
+.flex-banner {
+	
+	margin-bottom: 5px;
+	border-radius: 10px;
+	width: 100%
+
+		
+}
+
+
+.scg-logo {
+	
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 80%;
+	flex: 1;
+}
+
+.content {
+margin-top: 10px;
+display: flex;
+
+}
+
+.sidebar-right ,.sidebar-left ,.main-content {
+	height: 850px;
+	background-color: #DEB887;
+	border-radius: 7px;
+}
+
+.sidebar-right {
+	width: 180px;
+	float: right;
+	flex: 1;
+}
+
+
+
+.nav4, p {
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	word-spacing: 3px;
+	line-height: 20px;
+	margin: 5px 0;
+}
+
+
+h3{
+	text-align: center;
+	color: #fff;
+}
+
+
+
+.cricket-ball-icon, li{
+	word-spacing: 3px;
+	line-height: 40px;
+}
+
+
+
+
+.sidebar-left {
+	width: 180px;
+	float: left;
+	flex: 1;
+	display: inline-block;
+}
+
+
+.main-content {
+	width: 860px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 58.3%;
+	flex: 2;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+    padding: 10px;
+
+}
+
+
+.main-content h2 {
+	text-align: center;
+	color: green;
+}
+
+
+.footer-container {
+display: flex;
+flex: 1;
+margin-top: -10px;
+height: 200px;
+}
+
+.video-container{
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.youtube-player {
+	position:absolute;
+	top:10;
+	left:0;
+	width:80%;
+	height:90%;
+	margin-bottom: 10px;
+}
+ 
+.cricket-ball-icon{
+  
+  list-style-image:url('../Cricketballicon.png') ;
+   padding-left: 20px;
+   padding-bottom: 25px;
+
+}
+
+
+
+
+#nav4 li {
+	width: 180px; height: 160px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	
+	margin-top: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#nav4 a {
+	display: block;
+	width: 180px; height: 160px;
+}
+
+#nav4 span.filter {
+	display: block;
+	width: 180px; height: 160px;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0px; left: 0px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#nav4 h2 {
+	padding-left: 10px;
+}
+
+#nav4 span.label1, #nav4 span.label2 {
+	padding: 2px;
+}
+
+#nav4 span.label1 {
+	background-color: #FFF;
+	color: #222;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+	position: absolute; top: 10px; left: 260px;
+	transition: left 300ms ease-in-out;
+}
+
+#nav4 span.label2 {
+	background-color: #FFF;
+	color: #222;
+	text-transform: uppercase;
+	font-size: .8em;
+	position: absolute; top: 40px; left: -190px;
+	transition: left 300ms ease-in-out 200ms;
+}
+
+#nav4 li:hover span.filter {
+	display: none;
+}
+
+#nav4 li:hover span.label1 {
+	position: absolute; top: 10px; left: 10px;
+}
+
+#nav4 li:hover span.label2 {
+	position: absolute; top: 40px; left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Flexbox Container---*/
+
+
+.flex-nav ul{
+	border: 1.5px solid black;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	border-radius: 5px;
+	
+}
+
+.flex-nav li {
+	flex:3;
+}
+
+.flex-nav .social {
+	flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:1000px) {
+
+
+
+
+	.flex-nav ul {
+		flex-wrap: wrap;
+	}
+
+	.flex-nav li{
+		flex: 1 1 50%;
+	}
+
+	.flex-nav .social {
+		flex: 1 1 25%
+
+	}
+}
+
+
+
+
+
+@media all and (max-width:500px) {
+	.flex-nav li{
+		flex-basis: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
